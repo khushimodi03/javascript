@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    width: 50vw;
+}
+.calculator{
+    border: 1px black solid;
+    padding:20px;
+    border-radius: 16px;
+    background: rgb(81, 80, 80);
+    box-shadow: 8px 8px 8px 5px rgb(211, 20, 20);
+}
+input{
+    border: none;
+    padding: 24px;
+    margin: 10px;
+    width: 90%;
+    text-align: right;
+}
+button{
+    border: none;
+    width:60px;
+    height: 60px;
+    margin: 10px;
+    border-radius: 30%;
+    box-shadow: 3px 4px 0px 0px rgb(13, 13, 13);
+}
+.operator{
+    color: red;
+    font: 1em sans-serif;
+}
+    </style>
+    <body>
+        <div class="calculator">
+        <input type="text" id="input" placeholder="enter the value
+        ">
+        <div>
+           <button class="operator">AC</button>
+           <button class="operator">DEL</button>
+           <button class="operator">%</button>
+           <button class="operator">\</button>
+        </div>
+        <div>
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button class="operator">*</button>
+         </div>
+         <div>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button class="operator">+</button>
+         </div>
+         <div>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button class="operator">-</button>
+         </div>
+         <div>
+            <button>00</button>
+            <button>0</button>
+            <button>.</button>
+            <button class="operator">=</button>
+         </div>
+        </div> 
+        <script>
+            let input =document.getElementById('input');
+            let button = document.querySelectorAll('.button');
+            
+        </script>    
+    </body>
+    </html>
